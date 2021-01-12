@@ -1,4 +1,4 @@
-package com.example.models;
+package com.tatsam.priority.entities;
 
 import java.util.List;
 

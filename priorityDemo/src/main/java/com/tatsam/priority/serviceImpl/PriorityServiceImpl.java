@@ -6,12 +6,12 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.models.Area;
-import com.example.models.UserAreaPriority;
-import com.example.repository.AreaRepository;
-import com.example.repository.UserAreaPriorityRepository;
+import com.tatsam.priority.entities.Area;
+import com.tatsam.priority.entities.UserAreaPriority;
 import com.tatsam.priority.models.Details;
 import com.tatsam.priority.models.RequestJSONWrapper;
+import com.tatsam.priority.repository.AreaRepository;
+import com.tatsam.priority.repository.UserAreaPriorityRepository;
 import com.tatsam.priority.services.PriorityService;
 
 @Service
@@ -57,7 +57,6 @@ public class PriorityServiceImpl implements PriorityService {
 		}
 		
 		 userAreaRepo.saveAll(priorityList);
-		return "successfully saved all priorities";
-	}
-
+		return "successfully saved all prior";
+}
 }
