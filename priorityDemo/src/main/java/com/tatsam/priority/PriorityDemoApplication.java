@@ -1,4 +1,4 @@
-package com.tatsam.priority.priorityDemo;
+package com.tatsam.priority;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

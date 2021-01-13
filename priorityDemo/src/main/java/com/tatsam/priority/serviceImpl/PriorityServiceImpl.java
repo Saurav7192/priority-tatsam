@@ -38,6 +38,8 @@ public class PriorityServiceImpl implements PriorityService {
 
 		Integer userId = reqJWrapper.getUserId();
 		List<Details> detailsList = reqJWrapper.getDetails();
+		
+		/** fetching data from table (area)*/
 		List<Area> areaList = areaRepo.findAll();
 
 		List<UserAreaPriority> priorityList = new ArrayList<UserAreaPriority>();
@@ -55,7 +57,7 @@ public class PriorityServiceImpl implements PriorityService {
 			userAreaPriority.setSatisfaction(details.getSatisfaction());
 			priorityList.add(userAreaPriority);
 		}
-		
+		/** saving data to table (user_area_pririty)*/
 		 userAreaRepo.saveAll(priorityList);
 		return "successfully saved all prior";
 }

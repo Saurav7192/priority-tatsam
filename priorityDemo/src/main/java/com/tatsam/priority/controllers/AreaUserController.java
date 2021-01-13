@@ -14,16 +14,14 @@ import com.tatsam.priority.models.RequestJSONWrapper;
 import com.tatsam.priority.services.PriorityService;
 
 @RestController
-@RequestMapping("/api/area")
 public class AreaUserController {
     
 	@Autowired
 	PriorityService priorityService; 
 	
 	
-	@GetMapping
+	@GetMapping("/data")
 	public Object getAreaNames() {
-		
 		return priorityService.fetchAreaName();
 	}
 	
